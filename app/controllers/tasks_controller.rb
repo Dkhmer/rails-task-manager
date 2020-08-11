@@ -1,3 +1,5 @@
 class TasksController < ApplicationController
-    get 'tasks', to: 'show#index'
+    def index
+        @tasks = Task.all
+    end
 end
