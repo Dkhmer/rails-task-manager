@@ -1,4 +1,4 @@
-<h1>MY TASK</h1>
+<h1>DELETE</h1>
 
 <% @tasks.each do |task| %>
   <% if task.completed == true %>
@@ -7,5 +7,3 @@
     <%= link_to task.title, task_path(task) %>
   <% end %>
 <% end %>
-<%= link_to "create new task", tasks_new_path %>
-
